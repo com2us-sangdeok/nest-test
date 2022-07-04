@@ -10,4 +10,9 @@ export class PhotoController {
   findAll(): Promise<Photo[]> {
     return this.photoService.findAll();
   }
+
+  @Get('/test')
+  test(): Promise<Photo[]> {
+    return this.photoService.test();
+  }
 }
